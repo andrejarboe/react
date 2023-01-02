@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDom from 'react-dom/client'
 
+import './index.css'
+
 function Greating() {
   return (
     <div>
@@ -14,21 +16,22 @@ function Greating() {
         </a>
       </h2>
       <BookList />
-      <BookList />
-      <BookList />
     </div>
   )
 }
 
 const BookList = () => {
-    return <section>
+    return <section className='booklist'>
+      <Book />
+      <Book />
+      <Book />
       <Book />
   </section>
 }
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
