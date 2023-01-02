@@ -19,7 +19,7 @@ function App() {
         </a>
         {/* https://github.com/john-smilga/react-course-v3 */}
         <a href="https://github.com/john-smilga/react-course-v3" target="_blank">
-          React Course Notes
+          React Course Notes!
         </a>
       </header>
     </div>
