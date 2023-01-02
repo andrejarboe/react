@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom/client'
 
-export default function Greating() {
+function Greating() {
     return <h2>My First Component</h2>;
 }
 
