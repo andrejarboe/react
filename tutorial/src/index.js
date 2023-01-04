@@ -72,6 +72,11 @@ const BookList = () => {
     console.log(someValue);
   };
 
+    const getBook = (id) => {
+      const book = books.find((book) => book.id === id);
+      console.log(book);
+    };
+
   return (
     <section className="booklist">
       <EventExamples />
@@ -83,6 +88,7 @@ const BookList = () => {
             key={book.id}
             {...book}
             displayValue={displayValue}
+            getBook={getBook}
           />
         );
       })}
@@ -127,11 +133,15 @@ const EventExamples = () => {
 };
 
 const Book = (props) => {
-  const { imgSrc, author, title, displayValue, children } = props;
+  const { imgSrc, author, title, displayValue, getBook, id, children } = props;
 
   const displayTitle = () => {
     console.log(title);
   };
+
+    const getSingleBook = () => {
+      getBook(id);
+    };
 
   return (
     <article className="book">
@@ -143,6 +153,7 @@ const Book = (props) => {
       <h4>{author}</h4>
       <button onClick={displayTitle}>display title</button>
       <button onClick={displayValue}>click me</button>
+      <button onClick={getSingleBook}>Log Book ID</button>
       {children}
     </article>
   );
