@@ -3,6 +3,11 @@ import ReactDom from 'react-dom/client'
 
 import './index.css'
 
+const title = 'Atomic Habbits'
+const author = 'James Clear'
+const imgSrc =
+  'https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL600_SR600,400_.jpg'
+
 function Greating() {
   return (
     <div>
@@ -23,27 +28,45 @@ function Greating() {
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book
+        imgSrc={imgSrc}
+        title={title}
+        author={author}
+      />
+      <Book
+        imgSrc={imgSrc}
+        title={title}
+        author={author}
+      />
+      <Book
+        imgSrc={imgSrc}
+        title={title}
+        author={author}
+      />
+      <Book
+        imgSrc={imgSrc}
+        title={title}
+        author={author}
+      />
+      <Book
+        imgSrc={imgSrc}
+        title={title}
+        author={author}
+      />
+
     </section>
   )
 }
 
-const Book = () => {
+const Book = (props) => {
   return (
     <article className="book">
-      <img
-        src="https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL600_SR600,400_.jpg"
-        alt="Atomic Habits"
-      />
-      <h2>Atomic Habits</h2>
-      <h4>James Clear</h4>
+      <img src={props.imgSrc} alt={props.title} />
+      <h2>{props.title}</h2>
+      <h4>{props.author}</h4>
     </article>
   )
 }
-
 
 const root = ReactDom.createRoot(document.getElementById('root'))
 
