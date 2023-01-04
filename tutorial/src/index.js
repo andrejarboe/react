@@ -66,6 +66,12 @@ function Greating() {
 }
 
 const BookList = () => {
+  // Prop Drilling
+  const someValue = 'shakeAndBake';
+  const displayValue = () => {
+    console.log(someValue);
+  };
+
   return (
     <section className="booklist">
       <EventExamples />
@@ -76,6 +82,7 @@ const BookList = () => {
           <Book
             key={book.id}
             {...book}
+            displayValue={displayValue}
           />
         );
       })}
@@ -120,7 +127,7 @@ const EventExamples = () => {
 };
 
 const Book = (props) => {
-  const { imgSrc, author, title, children } = props;
+  const { imgSrc, author, title, displayValue, children } = props;
 
   const displayTitle = () => {
     console.log(title);
@@ -135,6 +142,7 @@ const Book = (props) => {
       <h2>{title}</h2>
       <h4>{author}</h4>
       <button onClick={displayTitle}>display title</button>
+      <button onClick={displayValue}>click me</button>
       {children}
     </article>
   );
