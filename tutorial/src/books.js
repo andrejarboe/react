@@ -47,6 +47,6 @@ export const books = [
     title:
       'The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma',
     imgSrc: theBodyKeepsScore,
-    id: 6,
+    id: 7,
   },
 ];

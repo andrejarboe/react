@@ -9,7 +9,9 @@ import Book from './Book';
 
 function Greating() {
   return (
-    <div>
+    <>
+      <h1>amazon best sellers</h1>
+      <BookList />
       <h2>
         <a
           href="https://reactjs.org/docs/events.html"
@@ -19,8 +21,7 @@ function Greating() {
           React Events
         </a>
       </h2>
-      <BookList />
-    </div>
+    </>
   );
 }
 
