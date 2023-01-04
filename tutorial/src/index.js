@@ -39,7 +39,6 @@ const BookList = () => {
 
   return (
     <section className="booklist">
-      <EventExamples />
       {/* index as the key only works when you know th list will not change */}
       {books.map((book, index) => {
         console.log(book);
@@ -53,6 +52,7 @@ const BookList = () => {
           />
         );
       })}
+      <EventExamples />
     </section>
   );
 };
