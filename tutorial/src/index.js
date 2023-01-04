@@ -51,6 +51,14 @@ const books = [
 function Greating() {
   return (
     <div>
+      <h2>
+        <a
+          href="https://reactjs.org/docs/events.html"
+          target="_blank"
+        >
+          React Events
+        </a>
+      </h2>
       <BookList />
     </div>
   );
@@ -59,13 +67,13 @@ function Greating() {
 const BookList = () => {
   return (
     <section className="booklist">
-      {books.map((book) => {
+      {/* index as the key only works when you know th list will not change */}
+      {books.map((book, index) => {
         console.log(book);
-
         return (
           <Book
-            {...book}
             key={book.id}
+            {...book}
           />
         );
       })}
