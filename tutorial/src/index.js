@@ -3,6 +3,39 @@ import ReactDom from 'react-dom/client'
 
 import './index.css'
 
+const book1 = {
+  author: 'James Clear',
+  title: 'Atomic Habits',
+  img: 'https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL900_SR900,600_.jpg',
+}
+
+const book2= {
+  author: 'Collen Hoover',
+  title: 'It Starts with Us: A Novel (It Ends with Us)',
+  img: 'https://images-na.ssl-images-amazon.com/images/I/71PNGYHykrL._AC_UL600_SR600,400_.jpg',
+}
+const book3 = {
+  author: 'Collen Hoover',
+  title: 'It Ends with Us: A Novel (1)',
+  img: 'https://images-na.ssl-images-amazon.com/images/I/81s0B6NYXML._AC_UL600_SR600,400_.jpg',
+}
+const book4 = {
+  author: 'Bonnie Garmus',
+  title: 'Lessons in Chemistry: A Novel',
+  img: 'https://images-na.ssl-images-amazon.com/images/I/71f266wrP+L._AC_UL600_SR600,400_.jpg',
+}
+const book5 = {
+  author: 'Jennie Casselman & Andres Chaparro',
+  title: 'Eager 2 Cook, Healthy Recipes for Healthy Living: Beef & Poultry',
+  img: 'https://images-na.ssl-images-amazon.com/images/I/612Ko7Ps0uL._AC_UL600_SR600,400_.jpg',
+}
+const book6 = {
+  author: 'Taylor Jenkins Reid',
+  title: 'The Seven Husbands of Evelyn Hugo: A Novel',
+  img: 'https://images-na.ssl-images-amazon.com/images/I/71ZvnK+4JiL._AC_UL300_SR300,200_.jpg',
+}
+
+
 const title = 'Atomic Habbits'
 const author = 'James Clear'
 const imgSrc =
