@@ -121,6 +121,11 @@ const EventExamples = () => {
 
 const Book = (props) => {
   const { imgSrc, author, title, children } = props;
+
+  const displayTitle = () => {
+    console.log(title);
+  };
+
   return (
     <article className="book">
       <img
@@ -129,6 +134,7 @@ const Book = (props) => {
       />
       <h2>{title}</h2>
       <h4>{author}</h4>
+      <button onClick={displayTitle}>display title</button>
       {children}
     </article>
   );
