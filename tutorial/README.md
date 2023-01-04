@@ -19,21 +19,22 @@ This is a small React app that displays a list of books and their respective inf
 
 ## File structure
 ```
-├── README.md
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-├── src
-│   ├── index.css
-│   ├── index.js
-│   ├── components
-│   │   ├── Book.js
-│   │   ├── BookList.js
-│   │   └── Greeting.js
-│   └── data
-│       ├── books.js
-│       └── index.js
-└── yarn.lock
+project
+├─ .gitignore
+├─ README.md
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ manifest.json
+│  └─ robots.txt
+└─ src
+   ├─ Book.js
+   ├─ books.js
+   ├─ images
+   │  └─ theBodyKeepsScore.jpg
+   ├─ index.css
+   └─ index.js
+
 ```
